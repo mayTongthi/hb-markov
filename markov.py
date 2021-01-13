@@ -64,9 +64,6 @@ def make_chains(text_string):
             chains[text_key] = []
 
         chains[text_key].append(text_value)
-            
-
-    print(chains)
     
 
     return chains
@@ -79,6 +76,9 @@ def make_text(chains):
     words = []
 
     # your code goes here
+    for word in chains:
+        for item in word:
+            words.append(item)
 
     return ' '.join(words)
 
